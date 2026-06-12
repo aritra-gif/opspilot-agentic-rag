@@ -76,3 +76,17 @@ Quality Validation
 Correction Node if needed
    ↓
 Final Answer
+
+
+## Deployment Note
+
+OpsPilot is designed as a fully local/open-source AI system.
+
+The main demo runs locally because it uses Ollama for local LLM inference. This avoids paid LLM APIs and keeps the project independent from proprietary model providers.
+
+For sharing the project publicly:
+
+- GitHub hosts the complete source code.
+- The full AI workflow can be run locally with Ollama.
+- A hosted demo can be added later using a lightweight Gradio/FastAPI deployment, but free hosting platforms may not reliably support local LLM inference workloads.
+- If deployed to a free platform, the practical option is usually a lightweight demo mode or a Hugging Face Space, depending on available compute.
