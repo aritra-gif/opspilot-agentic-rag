@@ -1,0 +1,23 @@
+{
+  "checkout-api": {
+    "status": "degraded",
+    "version": "v1.9.0",
+    "error_rate_percent": 8.7,
+    "latency_p95_ms": 420,
+    "last_checked": "2026-06-11T10:06:00Z"
+  },
+  "payment-service": {
+    "status": "healthy",
+    "version": "v3.4.1",
+    "error_rate_percent": 0.4,
+    "latency_p95_ms": 145,
+    "last_checked": "2026-06-11T10:06:00Z"
+  },
+  "orders-db": {
+    "status": "healthy",
+    "version": "postgres-16",
+    "connection_errors": 0,
+    "latency_p95_ms": 38,
+    "last_checked": "2026-06-11T10:06:00Z"
+  }
+}

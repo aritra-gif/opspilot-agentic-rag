@@ -1,0 +1,30 @@
+[
+  {
+    "id": "checkout_500_after_deployment",
+    "question": "Checkout API is returning 500 errors right after deployment. What should I check first?",
+    "expected_service": "checkout-api",
+    "expected_log_keyword": "PAYMENT_SERVICE_URL",
+    "expected_tools": ["log_search", "service_health", "deployments"]
+  },
+  {
+    "id": "payment_gateway_timeout",
+    "question": "Payment service is showing gateway timeout errors. What should I investigate?",
+    "expected_service": "payment-service",
+    "expected_log_keyword": "gateway_timeout",
+    "expected_tools": ["log_search", "service_health", "deployments"]
+  },
+  {
+    "id": "checkout_migration_issue",
+    "question": "Checkout API started failing after release and I suspect a database migration problem.",
+    "expected_service": "checkout-api",
+    "expected_log_keyword": "migration",
+    "expected_tools": ["log_search", "service_health", "deployments"]
+  },
+  {
+    "id": "severity_classification",
+    "question": "Checkout error rate is 8.7 percent. Is this SEV1, SEV2, or SEV3?",
+    "expected_service": "checkout-api",
+    "expected_log_keyword": "PAYMENT_SERVICE_URL",
+    "expected_tools": ["log_search", "service_health", "deployments"]
+  }
+]

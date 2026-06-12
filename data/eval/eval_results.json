@@ -1,0 +1,138 @@
+{
+  "summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0,
+    "pass_rate": 1.0
+  },
+  "results": [
+    {
+      "id": "checkout_500_after_deployment",
+      "passed": true,
+      "checks": {
+        "service_match": true,
+        "log_keyword_match": true,
+        "tools_match": true,
+        "answer_valid": true,
+        "answer_quality_ok": true
+      },
+      "expected": {
+        "service": "checkout-api",
+        "log_keyword": "PAYMENT_SERVICE_URL",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ]
+      },
+      "actual": {
+        "service": "checkout-api",
+        "log_keyword": "PAYMENT_SERVICE_URL",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ],
+        "missing_sections": [],
+        "quality_issues": [],
+        "correction_applied": false
+      }
+    },
+    {
+      "id": "payment_gateway_timeout",
+      "passed": true,
+      "checks": {
+        "service_match": true,
+        "log_keyword_match": true,
+        "tools_match": true,
+        "answer_valid": true,
+        "answer_quality_ok": true
+      },
+      "expected": {
+        "service": "payment-service",
+        "log_keyword": "gateway_timeout",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ]
+      },
+      "actual": {
+        "service": "payment-service",
+        "log_keyword": "gateway_timeout",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ],
+        "missing_sections": [],
+        "quality_issues": [],
+        "correction_applied": false
+      }
+    },
+    {
+      "id": "checkout_migration_issue",
+      "passed": true,
+      "checks": {
+        "service_match": true,
+        "log_keyword_match": true,
+        "tools_match": true,
+        "answer_valid": true,
+        "answer_quality_ok": true
+      },
+      "expected": {
+        "service": "checkout-api",
+        "log_keyword": "migration",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ]
+      },
+      "actual": {
+        "service": "checkout-api",
+        "log_keyword": "migration",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ],
+        "missing_sections": [],
+        "quality_issues": [],
+        "correction_applied": false
+      }
+    },
+    {
+      "id": "severity_classification",
+      "passed": true,
+      "checks": {
+        "service_match": true,
+        "log_keyword_match": true,
+        "tools_match": true,
+        "answer_valid": true,
+        "answer_quality_ok": true
+      },
+      "expected": {
+        "service": "checkout-api",
+        "log_keyword": "PAYMENT_SERVICE_URL",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ]
+      },
+      "actual": {
+        "service": "checkout-api",
+        "log_keyword": "PAYMENT_SERVICE_URL",
+        "tools": [
+          "deployments",
+          "log_search",
+          "service_health"
+        ],
+        "missing_sections": [],
+        "quality_issues": [],
+        "correction_applied": false
+      }
+    }
+  ]
+}

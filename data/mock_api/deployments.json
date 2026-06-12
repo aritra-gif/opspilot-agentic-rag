@@ -1,0 +1,30 @@
+{
+  "checkout-api": [
+    {
+      "version": "v1.9.0",
+      "deployed_at": "2026-06-11T10:00:00Z",
+      "status": "completed",
+      "triggered_by": "ci-pipeline",
+      "change_summary": "Enabled checkout payment client refactor",
+      "previous_stable_version": "v1.8.2"
+    },
+    {
+      "version": "v1.8.2",
+      "deployed_at": "2026-06-10T18:30:00Z",
+      "status": "stable",
+      "triggered_by": "ci-pipeline",
+      "change_summary": "Minor logging improvements",
+      "previous_stable_version": "v1.8.1"
+    }
+  ],
+  "payment-service": [
+    {
+      "version": "v3.4.1",
+      "deployed_at": "2026-06-09T14:10:00Z",
+      "status": "stable",
+      "triggered_by": "ci-pipeline",
+      "change_summary": "Updated provider retry settings",
+      "previous_stable_version": "v3.4.0"
+    }
+  ]
+}
